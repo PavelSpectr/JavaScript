@@ -18,11 +18,13 @@
 ( function ( ) {
 
   let i = 2
+    let j = 1
   
   do
   {
+      ++j
     i *= 2
-	console.log( 'Multiplied Number: ' + i )
+	console.log( j + ' Multiplied Number: ' + i )
   }
   while( i < 1000 )
 
