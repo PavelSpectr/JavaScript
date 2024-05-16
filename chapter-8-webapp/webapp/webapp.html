@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="favicon.ico">
+<link rel="shortcut icon" href="../favicon.ico">
 <title>Web Application</title>
 
 <style>
@@ -114,7 +114,7 @@ New Value:<input id="newval" type="text" size="5" value="">
 
 <script>
 
-fetch('http://localhost/data.json')
+fetch(/*'http://localhost/*/'data.json')
   .then( response => response.json() )	
   .then( cells  => fill( cells ) ) 					
   .catch( err => console.log( err ) )	

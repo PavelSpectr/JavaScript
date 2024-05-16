@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="favicon.ico">
+<link rel="shortcut icon" href="../favicon.ico">
 <title>Fetch</title>
 
 <style>
@@ -24,7 +24,7 @@ fetch( 'http://localhost/weekdays.json' )
 */
 
 // Concise syntax...
-fetch( 'http://localhost/weekdays.json' )
+fetch( /*http://localhost/*/'weekdays.json' )
 	.then( response => response.json( ) )
 	.then( data => list( data ) )
 	.catch( err => console.log( err ) )
